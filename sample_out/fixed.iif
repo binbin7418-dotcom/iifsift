@@ -1,0 +1,20 @@
+!ACCNT	NAME	ACCNTTYPE	BALANCE
+!CUST	NAME	FIRSTNAME	LASTNAME
+!VEND	NAME	PRINTAS
+!TRNS	TRNSID	TRNSTYPE	DATE	ACCNT	NAME	AMOUNT	DOCNUM	MEMO
+!SPL	SPLID	TRNSTYPE	DATE	ACCNT	AMOUNT	MEMO
+!ENDTRNS
+ACCNT	Business Checking	BANK	15230.75
+ACCNT	Office Supplies	EXP	0.00
+ACCNT	Sales Income	INC	0.00
+CUST	Acme Widgets	Acme	Wdgets
+VEND	Staples	Staples
+TRNS	1001	CHECK	2026-01-05	Business Checking	Staples	-250.00	1001	Printer paper and toner
+SPL	1002	CHECK	2026-01-05	Office Supplies	250.00	Paper and toner
+ENDTRNS
+TRNS	1003	DEPOSIT	2026-01-07	Business Checking	Acme Widgets	1200.00		Payment on account
+SPL	1004	DEPOSIT	2026-01-07	Sales Income	-1200.00	Invoice 88 payment
+ENDTRNS
+TRNS	1005	CHECK	2026-01-09	Business Checking	Staples	-89.99	1002	Stamps and envelopes
+SPL	1006	CHECK	2026-01-09	Office Supplies	89.99	Postage supplies
+ENDTRNS
