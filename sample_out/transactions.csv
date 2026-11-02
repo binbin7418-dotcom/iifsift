@@ -1,0 +1,4 @@
+TRNSID,TRNSTYPE,DATE,ACCNT,NAME,AMOUNT,DOCNUM,MEMO,NUM_SPLITS,BALANCE_CHECK
+1001,CHECK,2026-01-05,Business Checking,Staples,-250.00,1001,Printer paper and toner,1,OK
+1003,DEPOSIT,2026-01-07,Business Checking,Acme Widgets,1200.00,,Payment on account,1,OK
+1005,CHECK,2026-01-09,Business Checking,Staples,-89.99,1002,Stamps and envelopes,1,OK
