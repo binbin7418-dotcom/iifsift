@@ -1,0 +1,11 @@
+[PASS] counts: 4 transactions / 4 splits parsed (4 txns, 4 splits)
+[PASS] exactly the 4 seeded decision issues found (['duplicate_trnsid', 'missing_endtrns', 'unbalanced', 'undefined_account'])
+[PASS] mechanical fixes: amount format normalized 
+[PASS] mechanical fixes: MM/DD/YY dates normalized (2 date fixes in report)
+[PASS] re-read reconciliation passed ({'txns': 4, 'splits': 4, 'accounts_reconciled': 1})
+[PASS] unbalanced txn marked in transactions.csv 
+[PASS] clean txn marked OK in transactions.csv 
+[PASS] shipped sample.iif is completely clean (3 txns, 0 issues)
+[PASS] sample totals reconcile 
+
+9/9 PASS
