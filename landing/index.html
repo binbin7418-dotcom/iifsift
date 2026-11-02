@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IifSift — QuickBooks IIF to CSV splitter &amp; import auditor</title>
+<style>
+  body { margin:0; font-family: Georgia, 'Times New Roman', serif; background:#101623; color:#e8e4da; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 70px; }
+  h1 { font-size: 42px; line-height:1.12; margin: 0 0 8px; }
+  h1 .accent { color:#ffb454; }
+  .sub { font-size: 19px; color:#b9c0cf; line-height:1.55; margin: 0 0 26px; }
+  .card { background:#171e30; border:1px solid #2a3350; border-radius:12px; padding:20px 22px; margin: 22px 0; }
+  .card h2 { margin:0 0 10px; font-size:20px; color:#ffb454; }
+  .card p, .card li { color:#cfd5e2; line-height:1.6; font-size:16px; }
+  .cta { display:inline-block; background:#ffb454; color:#14100a; font-weight:bold; padding:14px 28px;
+          border-radius:10px; text-decoration:none; font-size:18px; margin: 10px 0 4px; }
+  .price { color:#b9c0cf; font-size:15px; }
+  ul { margin: 6px 0 6px 18px; padding:0; }
+  footer { color:#78829b; font-size:13px; margin-top:36px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Audit the IIF <span class="accent">before</span> QuickBooks swallows it.</h1>
+  <p class="sub">IifSift splits a QuickBooks .iif export into clean CSV tables — transactions, splits, accounts, customers, vendors — and audits what QuickBooks never checks: unbalanced splits, missing ENDTRNS blocks, undefined account references and duplicate transaction IDs, each named with its line number.</p>
+  <a class="cta" href="https://binbinster.gumroad.com/l/iifsift-quickbooks-iif-to-csv-auditor">Get IifSift — $29</a>
+  <p class="price">One-time payment. Windows 10/11. No subscription, no account, runs 100% offline.</p>
+
+  <div class="card">
+    <h2>Verified, not vibes</h2>
+    <p>Acceptance run (9/9 PASS): a seeded IIF with exactly four planted decision defects (unbalanced by 10.00, missing ENDTRNS, undefined account, duplicate TRNSID) and two mechanical ones ((1,200.00) amount, MM/DD/YY dates) — the audit found exactly the four, fixed exactly the two, and every output was re-read and reconciled to the cent. The shipped clean sample reports zero issues.</p>
+  </div>
+
+  <div class="card">
+    <h2>How it works</h2>
+    <ul>
+      <li>Pick any tab-delimited .iif export; the original file is never modified.</li>
+      <li>Mechanical dirt (amount formats, dates, whitespace) is normalized; judgment calls are reported, never rewritten.</li>
+      <li>You get the CSV tables, a fixed .iif, and audit_report.md with per-account totals and every issue's line number.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Honest scope</h2>
+    <p>Standard tab-delimited IIF. Balance is audited on the double-entry convention (TRNS + sum of SPL = 0). Importer tools in this space sell for $100-$199; this is the audit-and-split half at $29, once.</p>
+  </div>
+
+  <a class="cta" href="https://binbinster.gumroad.com/l/iifsift-quickbooks-iif-to-csv-auditor">Get IifSift — $29</a>
+  <footer>IifSift runs entirely on your computer. Your books never leave your machine.</footer>
+</div>
+</body>
+</html>
